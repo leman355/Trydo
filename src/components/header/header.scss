@@ -1,0 +1,70 @@
+.myContainer {
+    width: 93%;
+    margin: auto;
+}
+
+#header {
+    background-color: black;
+    font-family: apple;
+    .logo {
+        width: 13%;
+    }
+    ul {
+        li {
+            padding: 20px 15px;
+            position: relative;
+            &:hover {
+                ul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            a {
+                // padding: 10px;
+                text-decoration: none;
+                color: rgb(209, 204, 204);
+                font-weight: bold;
+                font-size: 17px;
+                transition: 0.3s ease;
+                &:hover {
+                    color: #F9024D;
+                }
+            }
+            ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 250px;
+                background-color: white;
+                padding: 15px;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s ease-in-out;
+                li {
+                    padding: 5px;
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .letstalk {
+        color: rgb(209, 204, 204);
+        text-decoration: none;
+        border: 2px solid rgb(209, 204, 204);
+        padding: 10px 20px;
+        border-radius: 2mm;
+        transform: translateY(3px);
+        transition: 0.3s ease;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 20px;
+        &:hover {
+            background-color: #F9024D;
+            color: white;
+            border: 2px solid #F9024D;
+            transform: translateY(0);
+        }
+    }
+}
